@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Escape Game</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: 'Inter', sans-serif;
+      }
+
+      body {
+         background: #0f0f0f;
+         color: #fff;
+         line-height: 1.6;
+      }
+
+      header {
+         background: linear-gradient(90deg, #ff6f00, #ff8c42);
+         padding: 20px 40px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         font-weight: 600;
+      }
+
+      header h1 {
+         font-size: 2rem;
+      }
+
+      nav a {
+         color: #fff;
+         text-decoration: none;
+         margin-left: 25px;
+         font-size: 1rem;
+         transition: 0.3s;
+      }
+
+      nav a:hover {
+         opacity: 0.8;
+      }
+
+      .hero {
+         padding: 120px 30px;
+         text-align: center;
+         background: #1a1a1a;
+      }
+
+      .hero h2 {
+         font-size: 3rem;
+         margin-bottom: 20px;
+         background: linear-gradient(90deg, #ff6f00, #ff8c42);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+      }
+
+      .hero p {
+         font-size: 1.2rem;
+         margin-bottom: 30px;
+         max-width: 700px;
+         margin-left: auto;
+         margin-right: auto;
+         color: #ccc;
+      }
+
+      .btn {
+         display: inline-block;
+         padding: 15px 40px;
+         background: #ff6f00;
+         border-radius: 10px;
+         color: #fff;
+         font-size: 1.2rem;
+         text-decoration: none;
+         transition: 0.3s;
+      }
+
+      .btn:hover {
+         background: #ff8c42;
+         transform: translateY(-3px);
+      }
+
+      .features {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 25px;
+         padding: 60px 30px;
+      }
+
+      .feature-card {
+         background: #1f1f1f;
+         padding: 25px;
+         border-radius: 12px;
+         width: 250px;
+         text-align: center;
+         transition: transform 0.3s, background 0.3s;
+      }
+
+      .feature-card:hover {
+         transform: translateY(-5px);
+         background: #2c2c2c;
+      }
+
+      .feature-card h3 {
+         color: #ff6f00;
+         margin-bottom: 15px;
+         font-size: 1.4rem;
+      }
+
+      .feature-card p {
+         color: #ccc;
+         font-size: 1rem;
+      }
+
+      section#about {
+         padding: 60px 30px;
+         text-align: center;
+      }
+
+      section#about h2 {
+         color: #ff6f00;
+         margin-bottom: 20px;
+      }
+
+      section#about p {
+         max-width: 700px;
+         margin: 0 auto;
+         color: #ccc;
+      }
+
+      section#download {
+         padding: 60px 30px;
+         text-align: center;
+      }
+
+      section#download h2 {
+         color: #ff6f00;
+         margin-bottom: 20px;
+      }
+
+      footer {
+         text-align: center;
+         padding: 20px 0;
+         background: #111;
+         border-top: 2px solid #ff6f00;
+         font-size: 0.9rem;
+         color: #aaa;
+      }
+
+      footer a {
+         color: #ff6f00;
+         text-decoration: none;
+         transition: 0.3s;
+      }
+
+      footer a:hover {
+         opacity: 0.8;
+      }
+
+      @media (max-width: 768px) {
+         .features {
+            flex-direction: column;
+            align-items: center;
+         }
+
+         header {
+            flex-direction: column;
+            align-items: flex-start;
+         }
+
+         nav {
+            margin-top: 10px;
+         }
+      }
+   </style>
+</head>
+
+<body>
+
+   <header>
+      <h1>Escape Game 🔑</h1>
+      <nav>
+         <a href="#features">Особенности</a>
+         <a href="#about">О игре</a>
+         <a href="#download">Поиграть</a>
+         <a href="#contact">Контакты</a>
+      </nav>
+   </header>
+
+   <section class="hero">
+      <h2>Погрузись в приключение! 🕵️‍♂️</h2>
+      <p>Исследуй комнату, находи артефакты, активируй статую и сбегай! Каждое действие влияет на сюжет. Логика игры
+         основана на f5049f63.</p>
+      <a href="#download" class="btn">Играть сейчас 🎮</a>
+   </section>
+
+   <section id="features" class="features">
+      <div class="feature-card">
+         <h3>Артефакты 🗝️</h3>
+         <p>Собери три мистических артефакта, чтобы открыть секреты и продвинуться в истории.</p>
+      </div>
+      <div class="feature-card">
+         <h3>Интерактивная комната 🛋️</h3>
+         <p>Исследуй кровать, ящик, вентиляцию, тумбочку и статую, чтобы найти подсказки.</p>
+      </div>
+      <div class="feature-card">
+         <h3>Нелинейный сюжет 📜</h3>
+         <p>Твои решения формируют исход истории, делая каждое прохождение уникальным.</p>
+      </div>
+      <div class="feature-card">
+         <h3>Консольный стиль 🖥️</h3>
+         <p>Игровой процесс в текстовом формате с современным минималистичным оформлением.</p>
+      </div>
+   </section>
+
+   <section id="about">
+      <h2>О Escape Game</h2>
+      <p>Escape Game — современное текстовое приключение, где игроки исследуют комнату, находят артефакты и решают
+         головоломки. Каждый выбор влияет на дальнейший путь и исход игры. Игра «живая» и интерактивная, с небольшими
+         эмодзи для атмосферы.</p>
+   </section>
+
+   <section id="download">
+      <h2>Поиграть в игру ⬇️</h2>
+      <a href="https://github.com/f5049f63/escape-game" class="btn">Нажимай!</a>
+   </section>
+
+   <section id="contact">
+      <h2>Контакты 📬</h2>
+      <p>GitHub: <a href="https://github.com/f5049f63" target="_blank">f5049f63</a></p>
+   </section>
+
+   <footer>
+      &copy; 2025 f5049f63. Все права защищены.
+   </footer>
+
+</body>
+
+</html>
